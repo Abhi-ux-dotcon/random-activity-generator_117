@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fun activity generator to help you find something to do when you're bored">
+    <title>Boredom Buster - Random Activity Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Switcher -->
+    <button class="theme-switch" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Main container for the entire application -->
+    <main class="container">
+        <!-- Header section with the main title -->
+        <header>
+            <h1>Boredom Buster 🎲</h1>
+        </header>
+
+        <!-- Categories section for activity filters -->
+        <section class="categories" aria-label="Activity categories">
+            <!-- Category buttons will be dynamically added here -->
+        </section>
+
+        <!-- Main action button -->
+        <button 
+            type="button" 
+            class="generate-btn" 
+            aria-label="Generate a random activity"
+        >
+            Generate Activity!
+        </button>
+
+        <!-- Results section -->
+        <section class="result-area" aria-live="polite">
+            <!-- Loading state -->
+            <div class="loading" hidden>
+                <span class="sr-only">Loading...</span>
+                <div class="spinner" aria-hidden="true"></div>
+            </div>
+            
+            <!-- Activity result will be displayed here -->
+            <div class="activity-result" hidden>
+                <div class="activity-card"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html> 
